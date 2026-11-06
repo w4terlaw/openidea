@@ -101,7 +101,7 @@ class LensWidget extends WidgetType {
 
   private fill(dom: HTMLElement, view: EditorView) {
     dom.textContent = "";
-    dom.style.paddingLeft = `${Math.round(this.indent * view.defaultCharacterWidth) + 6}px`;
+    dom.style.paddingLeft = `calc(${Math.round(this.indent * view.defaultCharacterWidth)}px + var(--editor-line-padding-start))`;
     // The guides of the annotated line continue through this row while indent guides are on.
     const guides = guideVars(Math.floor(this.indent / this.indentUnit), this.indentUnit);
     if (guides) {

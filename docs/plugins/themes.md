@@ -75,6 +75,9 @@ manifest fields are described in [`plugins/README.md`](../../plugins/README.md).
 - Metrics (`--fs-*`, `--h-*`, `--radius-*`) and fonts (`--font-ui`,
   `--font-mono`) can be overridden too, but a theme normally leaves them alone
   so that compact mode and the user's font settings keep working.
+  A theme that wants the classic, non-Islands look sets `--island-gap` to `1px`,
+  `--island-radius` to `0px` and paints the gaps with `--bg-island-gap`; the
+  editor's text inset is `--editor-line-padding-start`.
 
 ### The editor colour scheme file
 
@@ -324,7 +327,7 @@ a token.
 
 <!-- BEGIN GENERATED TOKEN REFERENCE: pnpm gen:theme-docs -->
 
-242 themeable tokens: 121 in the UI theme file, 121 in the editor colour scheme file.
+243 themeable tokens: 122 in the UI theme file, 121 in the editor colour scheme file.
 
 ### Surfaces (UI theme)
 
@@ -587,6 +590,7 @@ a token.
 |---|---|---|
 | `--bg-frame` | `#26282c` | `#e9eaee` |
 | `--bg-island` | `#191a1c` | `#ffffff` |
+| `--bg-island-gap` | `transparent` | `transparent` |
 | `--bg-stripe-hover` | `#ffffff17` | `#00000012` |
 | `--bg-stripe-selected` | `#ffffff29` | `#00000020` |
 | `--fg-stripe-selected-active` | `#ffffff` | `#ffffff` |

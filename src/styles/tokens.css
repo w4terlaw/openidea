@@ -249,6 +249,8 @@ html {
   --lh-code: 22px;
 
   /* metrics (theme JSON at 100%) */
+  /* space between the gutter and the text of every editor line */
+  --editor-line-padding-start: 6px;
   --h-titlebar: 40px;
   --titlebar-tool-button: 30px;
   /* tool window stripe button, icons only */
@@ -327,6 +329,8 @@ html {
   --bg-island: #191a1c;
   --island-gap: 6px;
   --island-radius: 10px;
+  /* the gaps between islands; a theme paints them to draw hairlines instead of gaps */
+  --bg-island-gap: transparent;
   --bg-stripe: var(--bg-frame);
   --bg-stripe-hover: #ffffff17;
   --bg-stripe-selected: #ffffff29;
@@ -661,6 +665,7 @@ html {
   /* Islands contract */
   --bg-frame: #e9eaee;
   --bg-island: #ffffff;
+  --bg-island-gap: transparent;
   --bg-stripe-hover: #00000012;
   --bg-stripe-selected: #00000020;
   --fg-stripe-selected-active: #ffffff;
@@ -916,6 +921,7 @@ html {
 
   --bg-frame: #1a1b1e;
   --bg-island: #000000;
+  --bg-island-gap: transparent;
   --bg-stripe-hover: #ffffff24;
   --bg-stripe-selected: #ffffff38;
   --fg-stripe-selected-active: #000000;
@@ -983,6 +989,7 @@ html {
 :root[data-color-theme] {
   --bg-app: var(--palette-bg);
   --bg-island: var(--palette-bg);
+  --bg-island-gap: transparent;
   --bg-input: var(--palette-bg);
   --bg-field: var(--palette-bg);
   --bg-checkbox: var(--palette-bg);

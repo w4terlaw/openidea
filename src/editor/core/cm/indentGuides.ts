@@ -23,7 +23,7 @@ export function guideVars(levels: number, step: number): { images: string; posit
   const positions: string[] = [];
   for (let level = 1; level < levels; level++) {
     images.push("var(--openidea-guide)");
-    positions.push(`calc(6px + ${level * step}ch) 0`);
+    positions.push(`calc(var(--editor-line-padding-start) + ${level * step}ch) 0`);
   }
   return { images: images.join(", "), positions: positions.join(", ") };
 }

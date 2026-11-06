@@ -97,6 +97,7 @@
     // Islands contract
     "--bg-frame": "#1f252e",
     "--bg-island": "#14171c",
+    "--bg-island-gap": "transparent",
     "--bg-stripe-hover": "#ffffff17",
     "--bg-stripe-selected": "#ffffff29",
     "--fg-stripe-selected-active": "#ffffff",

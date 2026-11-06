@@ -114,6 +114,7 @@
 .gap {
   position: relative;
   outline: none;
+  background: var(--bg-island-gap);
 }
 .gap[data-gap="left"] {
   grid-area: gap-left;

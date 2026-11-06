@@ -205,7 +205,7 @@ class StickyScroll {
             const inner = document.createElement("span");
             inner.className = "cm-openidea-stickyInner";
             inner.style.display = "inline-block";
-            inner.style.paddingLeft = "6px";
+            inner.style.paddingLeft = "var(--editor-line-padding-start)";
             renderLineContent(this.view.state, n, inner);
             text.appendChild(inner);
             row.append(num, text);

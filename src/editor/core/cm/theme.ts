@@ -153,7 +153,7 @@ export const openideaTheme = EditorView.theme({
     caretColor: "var(--caret, var(--fg-strong))",
     cursor: "text",
   },
-  ".cm-line": { padding: "0 16px 0 6px" },
+  ".cm-line": { padding: "0 16px 0 var(--editor-line-padding-start)" },
   ...caretStyles,
   "&.cm-openidea-ligatures .cm-scroller, &.cm-openidea-ligatures .cm-openidea-sticky": {
     fontVariantLigatures: "normal",
@@ -169,7 +169,9 @@ export const openideaTheme = EditorView.theme({
   "&.cm-openidea-hideGutter-inheritors :is(.cm-openidea-lineMarker-implemented, .cm-openidea-lineMarker-overridden), &.cm-openidea-hideGutter-supers :is(.cm-openidea-lineMarker-implementing, .cm-openidea-lineMarker-overriding)":
     { display: "none" },
   // Distraction Free Mode: no gutter; the text column (n chars + line padding) is centred.
-  "&.cm-openidea-distractionFree": { "--openidea-df-width": "calc(var(--openidea-df-columns, 80) * 1ch + 22px)" },
+  "&.cm-openidea-distractionFree": {
+    "--openidea-df-width": "calc(var(--openidea-df-columns, 80) * 1ch + var(--editor-line-padding-start) + 16px)",
+  },
   "&.cm-openidea-distractionFree .cm-gutters": { display: "none" },
   "&.cm-openidea-distractionFree .cm-content": {
     marginInlineStart: "max(0px, calc((100% - var(--openidea-df-width)) / 2))",
